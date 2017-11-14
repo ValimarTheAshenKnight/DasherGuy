@@ -5,4 +5,13 @@ package com.example.dbuetikofer.dasherguy;
  */
 
 public class Character extends Gameobject implements Moveable {
+
+    private boolean dead;
+    private int health;
+    private int speed;
+
+    public Character(){
+        boolean dead = false;
+        int health = 100;
+    }
 }
