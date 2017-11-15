@@ -14,6 +14,10 @@ public class SelectScreen extends AppCompatActivity {
 
     }
 
+    public void levelStart(View view){
+        Intent start = new Intent(SelectScreen.this, Game.class);
+        startActivity(start);
+    }
 
     public void optionsOpen(View view){
         Intent intent = new Intent(SelectScreen.this, Options.class);

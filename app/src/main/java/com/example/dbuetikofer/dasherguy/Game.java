@@ -1,6 +1,9 @@
 package com.example.dbuetikofer.dasherguy;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.graphics.Canvas;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.GestureDetector;
@@ -13,13 +16,17 @@ import android.view.View;
 
 
 
-public class Game extends AppCompatActivity implements View.OnTouchListener{
+public class Game extends AppCompatActivity implements View.OnTouchListener {
 
+
+    Bitmap platformbg = BitmapFactory.decodeResource(getResources(), R.drawable.grass1);
+    Canvas canvas = new Canvas(platformbg);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_game);
+        //setContentView(R.layout.activity_game);
+        setContentView(new GameView(this));
     }
 
     private final GestureDetector swipeDetector;
