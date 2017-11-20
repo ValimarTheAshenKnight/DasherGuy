@@ -11,6 +11,9 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+/*
+Der Bildschirm auf dem die App startet
+ */
 public class StartScreen extends AppCompatActivity {
 
 

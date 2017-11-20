@@ -5,4 +5,10 @@ package com.example.dbuetikofer.dasherguy;
  */
 
 public class Gameobject {
+
+    private double x;
+
+    private double y;
+
+    private double width;
 }
